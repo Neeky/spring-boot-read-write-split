@@ -1,10 +1,10 @@
 ## 创建 MySQL 用户
 ```sql
-create user appwrite@'%' identified by 'appW@2022';
+_create user appwrite@'%' identified by 'appW@2022';
 create user appread@'%' identified by 'appR@2022';
 
 grant insert,update,delete,select on *.* to appwrite@'%';
-grant select on *.* to appread@'%';
+grant select on *.* to appread@'%';_
 
 ```
 

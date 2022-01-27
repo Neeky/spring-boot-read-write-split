@@ -1,4 +1,4 @@
-package com.sqlpy.readwritesplit.demo;
+package com.sqlpy.readwritesplit.demo.entitys;
 
 public class Person {
     private Integer id;
@@ -8,6 +8,13 @@ public class Person {
     public Person(String name,Integer age) {
         this.name = name;
         this.age = age;
+    }
+
+    // 留一下空的构造器让框架有机会 new 出来，并用 set 来初始化。
+    public Person() {
+        this.id = 0;
+        this.name = "";
+        this.age = 0;
     }
 
     public Integer getId() {
